@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px;
+  position: absolute;
+  width: 100vw;
+}
+
+nav h2 {
+  font-size: 1.7rem;
+}
+
+nav div {
+  width: 59%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#MenuBtn
+{
+    
+    height:30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    position: absolute;
+    top: 10px;
+    right:20px;
+    
+}
+
+#MenuBtn img
+{
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: invert(100%)
+}
+
+
+nav div ul {
+    transition: 0.4s;
+  list-style: none;
+  display: flex;
+  column-gap: 30px;
+}
+
+nav div ul li {
+  font-size: 1.3rem;
+}
+
+nav div button {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 30px;
+  width: 110px;
+  height: 35px;
+  border: none;
+  font-size: 1rem;
+}
+
+main {
+  height: 100vh;
+  background-image: url("https://images.wallpaperscraft.com/image/single/leaves_plant_green_118405_2048x1152.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+main h2 {
+  font-size: 6rem;
+}
+
+#content {
+  position: relative;
+  top: 50px;
+  height: 70vh;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px solid gold;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.529), rgba(0, 0, 0, 0.053)),
+    url("https://images.wallpaperscraft.com/image/single/leaves_plant_green_118405_2048x1152.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#Form {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+#Form input {
+  width: 60%;
+  padding: 14px 20px;
+  font-size: 1.4rem;
+  border: 1px solid white;
+  background: transparent;
+  outline: none;
+  color: white;
+}
+
+#Form button {
+  width: 10rem;
+  height: 3.5rem;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1068px) {
+  nav {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  * {
+    font-size: 11px;
+  }
+  #content {
+    height: 60vh;
+  }
+  nav div {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  #Form {
+    row-gap: 20px;
+    flex-direction: column;
+  }
+
+  #Form input {
+    width: 100%;
+  }
+
+  #content {
+    border: none;
+  }
+}
+.Sidelist
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+@media screen and (max-width: 481px) {
+
+    nav div ul {
+    display: none;
+  }
+  #MenuBtn
+  {
+    display: flex;
+
+  }
+  #content {
+    height: 40vh;
+  }
+  main h2 {
+    text-align: center;
+    font-size: 6.2vmax;
+  }
+
+  #Form button {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+}
